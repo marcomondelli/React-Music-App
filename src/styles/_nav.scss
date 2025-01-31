@@ -1,0 +1,38 @@
+nav{
+    min-height: 10vh;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    button{
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        &:hover{
+            background: #fff;
+            color: #333;
+        }
+        span{
+            margin-left: 0.5rem;
+        }
+    };
+}
+
+
+@media screen and (max-width: 768px){
+    nav{
+        justify-content: space-around;
+        button{
+            z-index: 10;
+        }
+    }
+    
+}
